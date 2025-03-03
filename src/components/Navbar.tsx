@@ -3,6 +3,7 @@ import { Shield, Menu, X } from 'lucide-react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
 import { signOut } from '../lib/firebase/auth';
+import Logo from "../../dist/assets/logo/Cyberhouse logo gradient gold , hands only.png";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -42,7 +43,8 @@ export default function Navbar() {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-2">
-              <Shield className="h-8 w-8 text-blue-600" />
+              {/* <Shield className="h-8 w-8 text-blue-600" /> */}
+              <img src={Logo} alt="CyberHouse logo" className="h-14 w-14" />
               <span className="text-xl font-bold text-gray-800">CyberHouse</span>
             </Link>
           </div>

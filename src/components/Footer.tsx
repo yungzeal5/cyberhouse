@@ -1,6 +1,7 @@
 import React from 'react';
 import { Shield, Mail, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import Logo from "../../dist/assets/logo/Cyberhouse logo gradient gold.png";
 
 export default function Footer() {
   return (
@@ -8,11 +9,12 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <div className="flex items-center space-x-2">
-              <Shield className="h-8 w-8 text-blue-400" />
-              <span className="text-xl font-bold">CyberHouse</span>
+            <div className="flex items-start justify-center space-x-2">
+              {/* <Shield className="h-8 w-8 text-blue-400" /> */}
+              <img src={Logo} alt="dist/assets/logo/Cyberhouse logo gradient gold.png" className="h-[200px] w-[200px]" />
+              
             </div>
-            <p className="mt-4 text-gray-400">Securing Your Digital Future</p>
+           
           </div>
           
           <div>

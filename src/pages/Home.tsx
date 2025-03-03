@@ -3,6 +3,7 @@ import { Shield, Lock, Server, Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { backgrounds, overlayStyles } from '../styles/backgrounds';
 import ServiceCard from '../components/ServiceCard';
+import Image from "../styles/cyberhouseimg/ch.jpg"
 
 // Lazy load components
 const SecurityCarousel = lazy(() => import('../components/home/SecurityCarousel'));
